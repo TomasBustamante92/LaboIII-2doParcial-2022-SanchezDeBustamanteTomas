@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./labo3P2.css">
+	<script src="./labo3P2.js" defer></script>
+	<title>Parcial 1</title>
+</head>
+<body id="body">
+	<div id="contenedorCarga">
+		<div id="cargar"></div>
+	</div>
+	
+	<div id="formDatos">	
+		<h2>Formulario Lista</h2>
+		<table id="table">
+			<thead>
+				<tr>
+					<th id="thId" class="tHead">ID</th>
+					<th id="thModelo" class="tHead">Modelo</th>
+					<th id="thAnoFab" class="tHead">AnoFab</th>
+					<th id="thVelMax" class="tHead">VelMax</th>
+					<th id="thAltMax" class="tHead">AltMax</th>
+					<th id="thAutonomia" class="tHead">Autonomia</th>
+					<th id="thCantPue" class="tHead">CantPue</th>
+					<th id="thCantRue" class="tHead">CantRue</th>
+					<th id="thModificar" class="tHead">Modificar</th>
+					<th id="thEliminar" class="tHead">Eliminar</th>
+				</tr>
+			</thead>
+			<tbody id="tbody" class="tBody">
+			</tbody>
+		</table>
+		<button id="btnAgregar" type="button">Agregar Elemento</button>
+	</div>
+	<div id="divAbm">
+			<h2 id="inputTitulo">Formulario ABM</h2> 
+			<p>ID: <input type="text" id="inputId" readonly/><br>
+			Modelo: <input type="text" id="inputModelo"/><br> 
+			AnoFab: <input type="text" id="inputAnoFab"/> <br>
+			VelMax: <input type="text" id="inputvelMax"/> <br>
+			Tipo:  
+			<select name="lstTipoABM" id="lstTipoABM">
+				<option value="Aereo">Aereo</option>
+				<option value="Terrestre">Terrestre</option>
+			</select>
+            </p>
+			<label id="labelAux1">labelAux1: </label><input type="text" id="inputAux1"/> <br>
+			<label id="labelAux2">labelAux2: </label><input type="text" id="inputAux2"/> <br>
+			<br>
+			<button id="btnAlta" type="button">Aceptar</button> 
+			<button id="btnCancelar" type="button">Cancelar</button>
+	</div>
+</body>
+</html>
